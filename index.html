@@ -101,6 +101,18 @@
                             <b>Best New Entry :</b> Badge given in the first session of TAP Class only.
                         </label>
                     </div>
+                    <div>
+                        <label style="cursor: pointer; font-weight: 100;">
+                            <input type="radio" id="cheerfulcheerleader" name="fav_language" value="cheerfulcheerleader">
+                            <b>Cheerful Cheerleader :</b> Kid who appreciates & encourages other kids in the group.
+                        </label>
+                    </div>
+                    <div>
+                        <label style="cursor: pointer; font-weight: 100;">
+                            <input type="radio" id="presenteroftheweek" name="fav_language" value="presenteroftheweek">
+                            <b>Presenter of the week :</b> Kid who presented their work well (through voice note/text/any other form).
+                        </label>
+                    </div>                    
                 </div>
             </form>
             
@@ -156,6 +168,10 @@
             document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/attendancechampion.JPG"; 
         } else if (document.getElementById("bestnewentry").checked == true) {
             document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/bestnewentry.JPG";
+        } else if (document.getElementById("cheerfulcheerleader").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/cheerfulcheerleader.JPG";
+        } else if (document.getElementById("presenteroftheweek").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/presenteroftheweek.JPG";
         } 
         document.getElementById("cert").innerHTML = document.getElementById('nameField').value;
         makeCanvas();
