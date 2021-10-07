@@ -112,7 +112,14 @@
                             <input type="radio" id="presenteroftheweek" name="fav_language" value="presenteroftheweek">
                             <b>Presenter of the week :</b> Kid who presented their work well (through voice note/text/any other form).
                         </label>
-                    </div>                    
+                    </div> 
+                    <h4>Pre-test</h4>
+                    <div>
+                        <label style="cursor: pointer; font-weight: 100;">
+                            <input type="radio" id="superchallengefinisher" name="fav_language" value="superchallengefinisher">
+                            <b>Super Challenge Finisher</b>
+                        </label>
+                    </div> 
                 </div>
             </form>
             
@@ -170,7 +177,8 @@
             document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/cheerfulcheerleader.JPG";
         } else if (document.getElementById("presenteroftheweek").checked == true) {
             document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/bestpresenteroftheweek.JPG";
-        } 
+        } else if (document.getElementById("superchallengefinisher").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/superchallengefinisher.JPG";
         
         document.getElementById("cert").innerHTML = document.getElementById('nameField').value;
         makeCanvas();
