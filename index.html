@@ -31,46 +31,51 @@
                 </div>
                 <div style="display: flex; flex-direction: column;">
                     <p style="">Select badge type:</p>
+                    <h4>Arts</h4>
+
+                    <div>
+                        <label style="cursor: pointer; font-weight: 100;">
+                            <input type="radio" id="art-submission" name="fav_language" value="art-submission" style="cursor: pointer;">
+                            Best Submission
+                        </label>
+                    </div>
                     
                     <div>
                         <label style="cursor: pointer; font-weight: 100;">
-                            <input type="radio" id="yaroonkayaar" name="fav_language" value="yaroonkayaar" style="cursor: pointer;">
-                            <b>Yaaron ka Yaar :</b> Help other kids in the group by resolving queries.
+                            <input type="radio" id="art-presentation" name="fav_language" value="art-presentation" style="cursor: pointer;">
+                            Best Presentation
                         </label>
                     </div>
-                    
+
+                    <h4>Coding</h4>
+
                     <div>
                         <label style="cursor: pointer; font-weight: 100;">
-                            <input type="radio" id="curiousmind" name="fav_language" value="curiousmind" style="cursor: pointer;">
-                            <b>Curious Mind :</b> Ask good questions in TAP Class during Activity discussion.
+                            <input type="radio" id="coding-submission" name="fav_language" value="coding-submission" style="cursor: pointer;"> 
+                            Best Submission
                         </label>
                     </div>
 
                     <div>
                         <label style="cursor: pointer; font-weight: 100;">
-                            <input type="radio" id="sabkasaathi" name="fav_language" value="sabkasaathi" style="cursor: pointer;"> 
-                            <b>Sabka Saathi:</b> Make 3 friends in the group access activity by calling/ texting them. 
+                            <input type="radio" id="coding-presentation" name="fav_language" value="coding-presentation" style="cursor: pointer;">
+                            Best Presentation
+                        </label>
+                    </div>
+
+                    <h4>Science</h4>
+
+                    <div>
+                        <label style="cursor: pointer; font-weight: 100;">
+                            <input type="radio" id="science-submission" name="fav_language" value="science-submission" style="cursor: pointer;">
+                            Best Submission
                         </label>
                     </div>
 
                     <div>
                         <label style="cursor: pointer; font-weight: 100;">
-                            <input type="radio" id="caringfriend" name="fav_language" value="caringfriend" style="cursor: pointer;">
-                            <b>Caring Friend :</b> Make 1 friend in the group submit the work.
-                        </label>
-                    </div>
-
-                    <div>
-                        <label style="cursor: pointer; font-weight: 100;">
-                            <input type="radio" id="studentoftheweek" name="fav_language" value="studentoftheweek" style="cursor: pointer;">
-                            <b>Student of the week :</b> Student who accessed activity, active in tap class, submits on-time.
-                        </label>
-                    </div>
-
-                    <div>
-                        <label style="cursor: pointer; font-weight: 100;">
-                            <input type="radio" id="creativemind" name="fav_language" value="curiousmind">
-                            <b>Creative Mind :</b> Most Creative/Out of box submission.
+                            <input type="radio" id="science-presentation" name="fav_language" value="science-presentation">
+                            Best Presentation
                         </label>
                     </div>
 
@@ -79,7 +84,7 @@
                             <input type="radio" id="smartbrain" name="fav_language" value="smartbrain">
                             <b>Smart Brain :</b> Best idea shared.
                         </label>
-                    </div> -->
+                    </div> 
 
                     <div>
                         <label style="cursor: pointer; font-weight: 100;">
@@ -119,7 +124,7 @@
                             <input type="radio" id="superchallengefinisher" name="fav_language" value="superchallengefinisher">
                             <b>Super Challenge Finisher</b>
                         </label>
-                    </div> 
+                    </div> -->
                 </div>
             </form>
             
@@ -155,31 +160,19 @@
 </body>
 <script>
     function myFunction() {
-        if (document.getElementById("yaroonkayaar").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/yaroonkayaar.JPG";
-        } else if (document.getElementById("curiousmind").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/curiousmind.JPG";
-        } else if (document.getElementById("sabkasaathi").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/sabkasaathi.JPG";
-        } else if (document.getElementById("caringfriend").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/caringfriend.JPG";
-        } else if (document.getElementById("studentoftheweek").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/studentoftheweek.JPG";
-        } else if (document.getElementById("creativemind").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/creativemind.JPG";
-        } else if (document.getElementById("starstudent").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/starstudent.JPG";
-        } else if (document.getElementById("attendancechampion").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/attendancechampion.JPG"; 
-        } else if (document.getElementById("bestnewentry").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/bestnewentry.JPG";
-        } else if (document.getElementById("cheerfulcheerleader").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/cheerfulcheerleader.JPG";
-        } else if (document.getElementById("presenteroftheweek").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/bestpresenteroftheweek.JPG";
-        } else if (document.getElementById("superchallengefinisher").checked == true) {
-            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/superchallengefinisher.jpg";
-        }
+        if (document.getElementById("art-submission").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/art-submission.JPG";
+        } else if (document.getElementById("art-presentation").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/art-presentation.JPG";
+        } else if (document.getElementById("coding-submission").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/coding-submission.JPG";
+        } else if (document.getElementById("coding-presentation").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/coding-presentation.JPG";
+        } else if (document.getElementById("science-submission").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/science-submission.JPG";
+        } else if (document.getElementById("science-presentation").checked == true) {
+            document.getElementById("bg").src = "https://www.prachitank.com/tap-ticket/science-presentation.jpg";
+        } 
         
         document.getElementById("cert").innerHTML = document.getElementById('nameField').value;
         makeCanvas();
